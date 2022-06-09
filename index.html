@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Template</title>
+  <style>
+    /* ONLY PRESENTATION */
+    @import"https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap";
+    body {
+      background: rgb(64, 64, 75);
+      margin: 50px;
+      font-family: 'Nunito Sans' ,sans-serif;
+    }
+    .ONLY-PRESENTATION-WRAPPER {
+      background: white;
+      width: 595px;
+      padding: 24px 24px 12px;
+      margin: 0 auto;
+      box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.2);
+    }
+    /* ONLY PRESENTATION */
+  </style>
+</head>
+<body>
+  <section class="ONLY-PRESENTATION-WRAPPER">
+    <table class="header" style="width: 100%; border-bottom: 4px solid #F0CFAE; padding-bottom: 12px; margin-bottom: 24px;">
+      <tr>
+        <td class="logo" style="padding: 0;">
+          <img class="logo" src="./Logo.png" style="width: 164px; height: 52px;">
+        </td>
+        <td class="information" style="padding: 0;">
+          <table style="margin-left: auto;">
+            <tr>
+              <td style="padding: 0;">
+                <a href="saunfrancisco.pl" target="_blank" style="font-size: 12px; line-height: 18px; color: #6E2A36; text-align: right; text-decoration: none; display: block;">saunfrancisco.pl</a>
+              </td>
+              <td style="padding: 0;">
+                <img src="./web.svg" style="width: 16px; height: 16px; display: block; margin-left: 12px;">
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0;">
+                <a href="mailto:kontakt@saunfrancisco.pl"style="font-size: 12px; line-height: 18px; color: #6E2A36; text-align: right; text-decoration: none; display: block;">kontakt@saunfrancisco.pll</a>
+              </td>
+              <td style="padding: 0;">
+                <img src="./mail.svg" style="width: 16px; height: 16px; display: block; margin-left: 12px;">
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0;">
+                <a href="tel:+48 589 235 745" target="_blank" style="font-size: 12px; line-height: 18px; color: #6E2A36; text-align: right; text-decoration: none; display: block;">+48 589 235 745</a>
+              </td>
+              <td style="padding: 0;">
+                <img src="./phone.svg" style="width: 16px; height: 16px; display: block; margin-left: 12px;">
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+
+    <div class="header">
+      <h1 style="font-size: 36px; line-height: 48px; font-weight: 800; color: #F16449; letter-spacing: -0.02em; margin-top: 0; margin-bottom: 24px;">Sauna Beczka “Ruska Bania”</h1>
+      <div class="price" style="font-size: 24px; line-height: 24px; color: #6E2A36; margin-bottom: 24px;">Cena: <b>18 573,00 zł</b></div>
+      <p style="margin-top: 0; margin-bottom: 12px; font-size: 16px; line-height: 21px; color: #6E2A36;">
+        Limit four sets purchase per Nintendo Account with paid Nintendo Switch Online individual or family membership. Offer not available for free trial holders
+      </p>
+      <div class="separator" style="height: 1px; background: #EAECF0;"></div>
+      <div class="time" style="font-size: 16px; line-height: 21px; color: #6E2A36; margin-top: 12px; margin-bottom: 24px;">Czas produkcji: <b>3-4 tygodnie</b></div>
+    </div>
+
+    <div class="heading" style="margin-bottom: 24px;">
+      <table style="width: 100%;">
+        <tr>
+          <td style="padding: 0;">
+            <h2 style="white-space: nowrap; margin-top: 0; margin-bottom: 11px; font-size: 18px; line-height: 28px; font-weight: 800; color: #6E2A36;">Galeria zdjęć</h2>
+          </td>
+          <td style="padding: 0; width: 100%;"></td>
+        </tr>
+        <tr>
+          <td style="padding: 0;">
+            <div class="line" style="height: 2px; background: #F16449;"></div>
+          </td>
+          <td style="padding: 0;">
+            <div class="line" style="height: 1px; background: #EAECF0;"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="big-photo" style="border: 4px solid #F0CFAE; padding: 10px; margin-bottom: 10px;">
+      <img style="max-width: 100%; max-height: 300px; display: block; margin: 0 auto;" src="./example.png">
+    </div>
+    <!-- JEDNA TABELA NA WIERSZ ABY MPDF MÓGŁ JE ROZDZIELIĆ -->
+    <table class="photo-grid" style="margin-top: 0; margin-bottom: 10px; border-collapse: collapse;">
+      <tr>
+        <td style="padding: 0;">
+          <div class="photo" style="border: 4px solid #F0CFAE; padding: 10px; margin-right: 10px;">
+            <img style="max-width: 100%; max-height: 300px; display: block; margin: 0 auto;" src="./example.png">
+          </div>
+        </td>
+        <td style="padding: 0;">
+          <div class="photo" style="border: 4px solid #F0CFAE; padding: 10px; margin-right: 10px;">
+            <img style="max-width: 100%; max-height: 300px; display: block; margin: 0 auto;" src="./example.png">
+          </div>
+        </td>
+        <!-- OSTATNIA KOLUMNA NIE MA MARGIN-RIGHT -->
+        <td style="padding: 0;">
+          <div class="photo" style="border: 4px solid #F0CFAE; padding: 10px;">
+            <img style="max-width: 100%; max-height: 300px; display: block; margin: 0 auto;" src="./example.png">
+          </div>
+        </td>
+      </tr>
+    </table>
+    <!-- OSTATNIA TABELA MA MARGIN BOTTOM 24. INNE MAJĄ 10 -->
+    <table class="photo-grid" style="margin-top: 0; margin-bottom: 24px; border-collapse: collapse;">
+      <tr>
+        <td style="padding: 0;">
+          <div class="photo" style="border: 4px solid #F0CFAE; padding: 10px; margin-right: 10px;">
+            <img style="max-width: 100%; max-height: 300px; display: block; margin: 0 auto;" src="./example.png">
+          </div>
+        </td>
+        <td style="padding: 0;">
+          <div class="photo" style="border: 4px solid #F0CFAE; padding: 10px; margin-right: 10px;">
+            <img style="max-width: 100%; max-height: 300px; display: block; margin: 0 auto;" src="./example.png">
+          </div>
+        </td>
+        <td style="padding: 0;">
+          <div class="photo" style="border: 4px solid #F0CFAE; padding: 10px;">
+            <img style="max-width: 100%; max-height: 300px; display: block; margin: 0 auto;" src="./example.png">
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <div class="heading" style="margin-bottom: 24px;">
+      <table style="width: 100%;">
+        <tr>
+          <td style="padding: 0;">
+            <h2 style="white-space: nowrap; margin-top: 0; margin-bottom: 11px; font-size: 18px; line-height: 28px; font-weight: 800; color: #6E2A36;">Opis produktu</h2>
+          </td>
+          <td style="padding: 0; width: 100%;"></td>
+        </tr>
+        <tr>
+          <td style="padding: 0;">
+            <div class="line" style="height: 2px; background: #F16449;"></div>
+          </td>
+          <td style="padding: 0;">
+            <div class="line" style="height: 1px; background: #EAECF0;"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <p style="margin-top: 0; margin-bottom: 18px; font-size: 16px; line-height: 21px; color: #6E2A36;">
+      Limit four sets purchase per Nintendo Account with paid Nintendo Switch Online individual or family membership. Offer not available for free trial holders
+    </p>
+    <p style="margin-top: 0; margin-bottom: 18px; font-size: 16px; line-height: 21px; color: #6E2A36;">
+      Limit four sets purchase per Nintendo Account with paid Nintendo Switch Online individual or family membership. Offer not available for free trial holders
+    </p>
+    <img src="./example.png" style="width: 100%; margin-bottom: 18px;">
+    <p style="margin-top: 0; margin-bottom: 18px; font-size: 16px; line-height: 21px; color: #6E2A36;">
+      Limit four sets purchase per Nintendo Account with paid Nintendo Switch Online individual or family membership. Offer not available for free trial holders
+    </p>
+
+    <table class="table" style="width: 100%; text-align: left; border-collapse: collapse; margin-bottom: 24px;">
+      <tr>
+        <th style="background: #F9F2E4; padding: 10px; font-size: 16px; line-height: 21px; color: #6E2A36; font-weight: 800;">Tytuł 1</th>
+        <th style="background: #F9F2E4; padding: 10px; font-size: 16px; line-height: 21px; color: #6E2A36; font-weight: 800;">Tytuł 2</th>
+        <th style="background: #F9F2E4; padding: 10px; font-size: 16px; line-height: 21px; color: #6E2A36; font-weight: 800;">Tytuł 3</th>
+      </tr>
+      <tr>
+        <td style="background: #FFFCF5; padding: 10px; font-size: 16px; line-height: 21px; color: #6E2A36;">Jakaś treść</td>
+        <td style="background: #FFFCF5; padding: 10px; font-size: 16px; line-height: 21px; color: #6E2A36;">Jakaś treść</td>
+        <td style="background: #FFFCF5; padding: 10px; font-size: 16px; line-height: 21px; color: #6E2A36;">Jakaś treść</td>
+      </tr>
+      <tr>
+        <td style="background: #F9F2E4; padding: 10px; font-size: 16px; line-height: 21px; color: #6E2A36;">Jakaś treść</td>
+        <td style="background: #F9F2E4; padding: 10px; font-size: 16px; line-height: 21px; color: #6E2A36;">Jakaś treść</td>
+        <td style="background: #F9F2E4; padding: 10px; font-size: 16px; line-height: 21px; color: #6E2A36;">Jakaś treść</td>
+      </tr>
+    </table>
+
+    <div class="footer" style="margin-top: 24px; border-top: 1px solid #EAECF0; padding-top: 12px; line-height: 8px; text-align: center;">
+      <a href="#" target="_blank" style="font-size: 8px; line-height: 8px; height: 8px; color: #6E2A36; text-decoration: none;">saunfrancisco.pl/link-do-tego-produktu</a>
+    </div>
+  </section>
+</body>
+</html>
